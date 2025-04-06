@@ -9,7 +9,7 @@ function MovieList() {
     const dispatch = useDispatch();
     const movies = useSelector(state => state.movie.movies);
 
-    // Memoize the movies array
+    // Memoize the movies array;
     const memoizedMovies = useMemo(() => {
         return movies;
     }, [movies]);
